@@ -1,0 +1,379 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{}{Jack Langerman}
+{\href{mailto:jackmlangerma@nyu.edu}{jackmlangerman@\{ nyu.edu \ | \ gmail.com \}} | 646.771.8131  \\
+\{ github \ | \ gitlab \} .com/JackLangerman +  linkedin.com/in/jacklangerman/}
+
+
+% \vspace{-1.5cm}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.36\textwidth} 
+% \vspace{2em}
+
+
+% \textbf{\LARGE Jack Langerman}\\
+% \centering{ 
+% \href{mailto:jackmlangerma@nyu.edu}{jackmlangerman@\{ nyu.edu \ | \ gmail.com \}} | 646.771.8131  \\
+% \{ github \ | \ gitlab \} .com/JackLangerman
+% }
+
+
+
+
+% \smname{}{Jack \\ \vspace{.1cm} Langerman}
+% {\href{mailto:jackmlangerma@nyu.edu}{jackmlangerman@nyu.edu  \\ github.com/JackLangerman \\ gitlab.com/JackLangerman \\ 646.771.8131 } }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Publications and Honors} 
+\scalebox{0.84}{%
+\noindent\begin{tabular}{@{}lr}
+Invited Mainstage Speaker &NYCML '19 \\
+Invited Speaker &Bertelsmann Data Exchange \\
+EE \& CE Dept. Fellowship &NYU Tandon \\ 
+Video Coding Scholarship &NYU ECE\\
+Speaker/Author &IEEE SPMB Symposium \\
+Author & Intl. Ultrasonics Symposium \\
+Eagle Scout &Boys Scouts of America  \\
+
+% P3 Paraglider Pilot &USHPA \\
+% Open Water Diver &PADI \\
+% First Aid + CPR &Red Cross \\
+\end{tabular}
+}
+% \vspace{-.3cm}
+\sectionsep
+
+
+\subsection{Technical Knowledge}
+\justify{ 
+\noindent  Deep Learning  \textbullet{}  Machine Learning  \textbullet{}  Software Engineering  \textbullet{}  Computer Vision  \textbullet{} Natural Language Processing  \textbullet{}  Human Computer Interaction  \textbullet{}  Parallel / Distributed ML  \textbullet{}  Cloud, Cluster \& High Performance Computing % HPC %projection mapping
+\sectionsep
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \section{Skills}
+\subsection{Languages / Frameworks}
+\justify {
+PyTorch \textbullet{} Tensorflow \textbullet{} SciPy/Conda Stack (NumPy / SkLearn, etc.) \textbullet{} Dask \textbullet{} Python \textbullet{} *nix shell / BASH / etc \textbullet{} HTML/CSS/Javascript \textbullet{} SSH \textbullet{} \LaTeX \textbullet{} \mbox{{\footnotesize $\approx$} C/C++} \textbullet{} SQL \textbullet{} git \textbullet{} DVC
+\sectionsep
+}
+
+% \section{Skills}
+% \subsection{Languages}
+% Python \textbullet{} BASH \textbullet{} HTML/CSS/Javascript \textbullet{} SQL \textbullet{} \LaTeX \textbullet{} C/C++
+% \sectionsep
+% \subsection{Frameworks/Libraries}
+% PyTorch \textbullet{} Tensorflow \textbullet{} NumPy \textbullet{} Processing \textbullet{} OpenCV \textbullet{} Dask % Ruby on Rails% \textbullet{} Ionic % \textbullet{} SKLearn % 
+% \sectionsep
+% % \subsection{Operating Systems}
+% % Mac OS \textbullet{} Unix/Linux
+% \sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Education}
+\descript{\textbf{Relevant Coursework}} \vspace{0.5em}
+\descript{NYU}
+\scalebox{0.94}{%
+\noindent\begin{tabular}{@{}lr}
+% TA for Advanced Machine Learning &(Grad) \\
+Deep Learning &(Grad) \\
+Special Topics in Advanced ML &(Grad)\\
+Design \& Analysis of Algorithms II &(Grad) \\
+Probability \& Stochastic Processes&(Grad) \\
+Calculus II &(Honors) \\
+\end{tabular}
+}
+
+\vspace{0.5em}
+\descript{Online}
+% \begin{tabular}{ll}
+Linear Algebra (MIT OCW, Strang) \\
+% Deep Learning (Google / Udacity) \\
+% Machine Learning (Andrew Ng - Coursera) \\
+CS231n: Conv Nets for Visual Recognition (Stanford Online) \\
+CS224d: Deep Learning for NLP (Stanford Online) \\
+% Andrew Ng Machine Learning (Coursera) \\
+% \end{tablular}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace{0.3cm}
+\descript{\textbf{Degree}}
+New York University: \\
+Tandon School of Engineering \\
+% \descript{BS in Computer Science}
+Computer Science
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\descript{\textbf{Projects}}
+% \begin{tabular}{ll}
+Representation Learning for TV (Viacom)       \textbullet{} %\\
+Deep BV                                       \textbullet{} %\\
+AlphaZero Neural Grammar Error Correction     \textbullet{} %\\
+Delving Deep into Dropout and Label Smoothing \textbullet{} %\\
+Simplified AlphaZero                          \textbullet{} %\\
+Dispatch                                      \textbullet{} %\\
+Weatherbet                                    %\\
+% \end{tabular}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     references
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{References}
+\noindent\begin{tabular}{@{}lcr}
+Howard Huang &\hspace{1em} &(Bell Labs)   \\
+Anna Choromanska & \hspace{1em} &(NYU-ML)     \\
+Yao Wang &\hspace{1em} &(NYU Video Lab)             \\
+\end{tabular}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CODE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Code} 
+% \begin{tabular}{ll}
+% https://github.com/JackLangerman/    \\
+% https://gitlab.com/JackLangerman/	 \\
+% \end{tabular}
+
+% \sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.03\textwidth} 
+\hfill
+\end{minipage} 
+\begin{minipage}[t]{0.58\textwidth} 
+% \vspace{-1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+
+\scalebox{1.1}{
+    \section{Work Experience / Research} 
+} \newline
+
+\scalebox{0.7}{
+    \runsubsection{Bell Labs (Nokia/Opticom)}
+    \descript{| Research Consultant}
+    \location{February 2019-present | New York, NY}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+}
+
+
+% Contracted to design novel techniques/algorithms and explore system architectures for applying deep learning and neural network based methods to centimeter level robotic / device localization via computer vision and sensor fusion in 5th generation cellular equipped environments.
+
+Spearhead monocular vision based localization at Bell Labs; design and implement novel techniques, algorithms and  system architectures for applying deep learning to SLAM and precise re-localization; create framework, road-map, underlying code-base, documentation and cloud infrastructure; and oversee deployment of PoC in customer facing demo facility. Mentor summer + fall interns (UG-PhD.). Improve 3d capture rate by 100x. Focus on monocular vision/point sets,  RF / multi-sensory data. 
+
+% design
+
+\sectionseplg
+
+\scalebox{0.7}{
+    \runsubsection{NYU Video Lab}
+    \descript{| Researcher}
+    \location{May 2018-May 2019 | New York, NY}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+}
+
+
+% ML lead under PI Yao Wang on research collaboration between Viacom and NYU Video Lab facilitated by NYC Media Lab. Representation Learning for large unstructured multimodal data (TV Shows) -NLP / Transformer based; as well as several downstream tasks including hierarchical multilabel classification with several thousand classes and noisy labels, as well as ranking, recommendation, retrieval and visualization.  
+
+% Previous project focused on Deep Learning for 3D volumetric semantic segmentation for medical images. Responsible for design and implementation of novel techniques for medical image analysis and pattern recognition. Designed and implemented novel Neural Network / Deep Learning based pipeline to segment brain ventricles from 3D ultrasound scans of embryonic mice which outperformed the previous state-of-the-art by a large margin.
+
+- Deep Representation Learning for TV Shows: ML lead under PI Yao Wang on research collaboration (Viacom/NYU Video Lab/NYC Media Lab). Design and implement novel pipeline using state of the art Transformer models leveraging large unsupervised corpora as well as small labeled data to learn general representations for several downstream tasks including hierarchical multi-label classification (1k+ noisy labels), as well as ranking, recommendation, retrieval, and visualization.
+
+
+% - ML lead under PI Yao Wang on research collaboration between Viacom and NYU Video Lab facilitated by NYC Media Lab. Representation Learning for large unstructured multimodal data (TV Shows) -NLP / Transformer based; as well as several downstream tasks including hierarchical multilabel classification with several thousand classes and noisy labels, as well as ranking, recommendation, retrieval and visualization.  
+
+- 3D volumetric semantic segmentation for medical images:  design and implement of novel techniques for medical image analysis and pattern recognition. Novel Neural Network / Deep Learning based pipeline outperformed the previous state-of-the-art for 3D ultrasound scans of embryonic mice by a margin of 25\% (presented at IEEE SPMB).
+
+
+\sectionseplg
+
+
+\scalebox{0.7}{
+    \runsubsection{Advanced Machine Learning}
+    \descript{| Teaching Assistant }
+    \location{Jan 2019-May 2019 | New York, NY}
+    \vspace{\topsep}
+}
+Graduate (Masters/PhD) course on Machine Learning, "presents the main concepts, techniques, algorithms, and state-of-the-art approaches in modern machine learning from both theoretical and practical perspective." Prereqs include grad ML, Probability, + "mathematical maturity".
+
+\sectionseplg
+
+
+
+\scalebox{0.7}{
+    % \section{Work Experience}
+    \runsubsection{Dell Inc.}
+    \descript{| Project Technical Lead }
+    \location{2015 | New York, NY}
+} \newline
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Designed and implemented five custom installations for New York Keynote / Release Event of Dell’s new XPS Notebooks. Included custom computer vision, fluid simulation, social share, and projection mapping solutions. Presented work directly to Michael Dell. Panelist at invited developer talk hosted by Jonathan Gottfried (Major League Hacking).
+\sectionseplg
+
+
+
+\scalebox{0.7}{
+    \runsubsection{NYU Game Innovation Lab}
+    \descript{| Part-Time Researcher}
+    \location{2013-2014 | New York, NY}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+}
+Designed and implemented projection mapping and computer vision solution presented at Eyebeam at the Computational Fashion Exhibition which implemented “The Lightning Bug Game” by Artist Kaho Abe. Designed and implemented novel "3d drawing" experience presented at public event at  Game Lab. 
+\sectionseplg
+
+% \runsubsection{NYU Game Innovation Lab}
+% \descript{| Part-Time Researcher}
+% \location{2013-2014 | New York, NY}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% Worked with Kaho Abe on projection mapping and computer vision design to implement “The Lightning Bug Game” which was presented at Eyebeam at the Computational Fashion Exhibition.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \scalebox{1.1}{
+%     % \vspace{23pt} \newline
+%     \section{INDEPENDENT} 
+% } \newline
+
+
+
+\scalebox{0.7}{
+    \runsubsection{Festival of Colors: Holi NYC}
+    \descript{| Executive Producer }
+    \location{2012-Present | New York, NY}
+} \newline
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Oversee all aspects of 5000+ person single day outdoor music and art festival. Lead core planning team of 3-5 \& staff of 40+ on the day of event. Contract all vendors / contractors + work with local govt' and ensure event goes smoothly and brings a unique experience to the public.
+\sectionseplg
+
+\scalebox{0.7}{
+    \runsubsection{Independent}
+    \descript{| Tech Director/Consultant }
+    \location{2012-Present | New York, NY}
+} \newline
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Madison Square Garden (Baby Face – Assistant Producer), Apostrophe Gallery @ MANA Contemporary (Tech Director), responsible for implementing technical solutions to artists’ visions; overseeing logistics/setup/production; interfacing between management, MSG staff/admin, artists, etc..
+\sectionseplg
+\sectionseplg
+\begin{flushright} 
+    \scalebox{0.65}{(last compiled \today)} 
+\end{flushright}
+
+\end{minipage}
+
+\end{document}  \documentclass[]{article}
