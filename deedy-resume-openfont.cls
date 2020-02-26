@@ -30,7 +30,7 @@
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
+\setmainfont[Scale=0.9,Color=primary, Path = fonts/lato/]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
 
@@ -97,7 +97,7 @@ Last Updated on
 
 
 % Section seperators command -- leftcol
-\newcommand{\sectionsep}[0]{\vspace{15pt}}
+\newcommand{\sectionsep}[0]{\vspace{10pt}}
 
 
 % Section seperators command -- rightcol
