@@ -21,6 +21,10 @@
 \usepackage[document]{ragged2e}
 \usepackage[none]{hyphenat}
 
+% try to make ATS not be terrible
+% \input{glyphtounicode}
+% \pdfgentounicode=1
+
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
